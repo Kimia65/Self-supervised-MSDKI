@@ -1,5 +1,10 @@
 # note : the visualisations here are for all 6 images 
 
+# import libraries
+import matplotlib.pyplot as plt
+import pandas as pd
+
+
 # the maps in saggital view
 fig, ax = plt.subplots(6, 4, figsize=(50,100),subplot_kw={'xticks': [], 'yticks': []})
 
