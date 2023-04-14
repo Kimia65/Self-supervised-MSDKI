@@ -6,12 +6,12 @@ import nibabel as nib
 from nibabel.testing import data_path
 
 # load image voxels
-file = os.path.join(data_path, '/Users/kimia/Downloads/Diffusion/data.nii.gz')
+file = os.path.join(data_path, '/Diffusion/data.nii.gz')
 image = nib.load(file)
 data_hcp = image.get_fdata()
 
 # load mask voxels
-fl = os.path.join(data_path, '/Users/kimia/Downloads/Diffusion/nodif_brain_mask.nii.gz')
+fl = os.path.join(data_path, '/Diffusion/nodif_brain_mask.nii.gz')
 img = nib.load(fl)
 mask = img.get_fdata()
 
