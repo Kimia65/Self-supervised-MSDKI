@@ -10,7 +10,7 @@ file = os.path.join(data_path, '/Users/kimia/Downloads/Diffusion/data.nii.gz')
 image = nib.load(file)
 data_hcp = image.get_fdata()
 
-# load mask voxles
+# load mask voxels
 fl = os.path.join(data_path, '/Users/kimia/Downloads/Diffusion/nodif_brain_mask.nii.gz')
 img = nib.load(fl)
 mask = img.get_fdata()
