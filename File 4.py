@@ -19,7 +19,7 @@ MSK_111312_img[MSK_111312_img>2] = 2
 MSK_111312_img[MSK_111312_img<0] = 0
 
 
-# To visualise the maps, matplotlib was used( the code is in file 5)
+# To visualise the maps, matplotlib was used (the code is in file 5)
 
 
 # define contrast and contrast-to-noise ratio
@@ -30,11 +30,11 @@ def contrast_to_noise_ratio(a,b,c,d):
     return np.abs(a-b)/math.sqrt(c+d)
 
 # load ADC and FA
-a_111312 = nib.load('/Users/kimia/Downloads/Diffusion/adc.nii.gz').get_fdata()
-f_111312 = nib.load('/Users/kimia/Downloads/Diffusion/fa.nii.gz').get_fdata()
+a_111312 = nib.load('/Diffusion/adc.nii.gz').get_fdata()
+f_111312 = nib.load('/Diffusion/fa.nii.gz').get_fdata()
 
 # load mask
-mfile_111312 = os.path.join(data_path, '/Users/kimia/Downloads/Diffusion/nodif_brain_mask.nii.gz')
+mfile_111312 = os.path.join(data_path, '/Diffusion/nodif_brain_mask.nii.gz')
 mimg_111312 = nib.load(mfile_111312)
 mask_111312 = mimg_111312.get_fdata()
 
@@ -84,4 +84,4 @@ v_MSK_111312_img_wm = statistics.pvariance(MSK_111312_img_wm)
 v_MSK_111312_img_gm = statistics.pvariance(MSK_111312_img_gm)
 CR_MSK_111312 = contrast_to_noise_ratio(mu_MSK_111312_img_wm,mu_MSK_111312_img_gm,v_MSK_111312_img_wm,v_MSK_111312_img_gm)
 
-# to compare conrast and contrast-to-noise ratio bar plots were plotted using pandas (the code is in file 5)
+# to compare contrast and contrast-to-noise ratio, bar plots were plotted using pandas (the code is in file 5)
