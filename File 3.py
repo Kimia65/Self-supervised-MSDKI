@@ -1,10 +1,6 @@
 # import libraries
-
-# Reconstruction module
 import dipy.reconst.msdki as msdki
-
 from dipy.core.gradients import gradient_table
-
 import os
 import numpy as np
 import nibabel as nib
