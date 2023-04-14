@@ -1,4 +1,4 @@
-# note : the visualisations here are for all 6 images 
+# note : the visualisations here are for all 6 scans
 
 # import libraries
 import matplotlib.pyplot as plt
