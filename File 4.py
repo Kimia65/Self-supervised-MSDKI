@@ -1,12 +1,10 @@
 # import libraries
 import nibabel as nib
-import matplotlib.pyplot as plt
 import os
 from nibabel.testing import data_path
 import statistics
 import math
 import numpy as np
-import pandas as pd
 
 # load the d_maps and k_maps of scan with suoervised learning and LSQ
 # clip the MSD and MSK (the mapsfrom LSQ) to be within certain theresholds
