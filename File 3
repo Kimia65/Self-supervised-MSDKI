@@ -1,21 +1,9 @@
 # import libraries
-import numpy as np
-import matplotlib.pyplot as plt
 
-# Reconstruction modules
-import dipy.reconst.dki as dki
+# Reconstruction module
 import dipy.reconst.msdki as msdki
 
-# For simulations
-from dipy.sims.voxel import multi_tensor
 from dipy.core.gradients import gradient_table
-from dipy.core.sphere import disperse_charges, HemiSphere
-
-# For in-vivo data
-from dipy.data import get_fnames
-from dipy.io.gradients import read_bvals_bvecs
-from dipy.io.image import load_nifti
-from dipy.segment.mask import median_otsu
 
 import os
 import numpy as np
