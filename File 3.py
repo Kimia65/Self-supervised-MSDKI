@@ -7,22 +7,22 @@ import nibabel as nib
 from nibabel.testing import data_path
 
 # load b-values and b-vestors of the image
-fl1_111312 = os.path.join(data_path, '/Users/kimia/Downloads/Diffusion/bvals')
+fl1_111312 = os.path.join(data_path, '/Diffusion/bvals')
 bvals_111312 = np.loadtxt(fl1_111312)
 
-fl2_111312 = os.path.join(data_path, '/Users/kimia/Downloads/Diffusion/bvecs')
+fl2_111312 = os.path.join(data_path, '/Diffusion/bvecs')
 bvecs_111312 = np.loadtxt(fl2_111312)
 
 # make gardient table
 gtab_111312 = gradient_table(bvals_111312, bvecs_111312)
 
 # load image
-dfile_111312 = os.path.join(data_path, '/Users/kimia/Downloads/Diffusion/data.nii.gz')
+dfile_111312 = os.path.join(data_path, '/Diffusion/data.nii.gz')
 dimg_111312 = nib.load(dfile_111312)
 image_111312 = dimg_111312.get_fdata()
 
 # load mask
-mfile_111312 = os.path.join(data_path, '/Users/kimia/Downloads/Diffusion/nodif_brain_mask.nii.gz')
+mfile_111312 = os.path.join(data_path, '/Diffusion/nodif_brain_mask.nii.gz')
 mimg_111312 = nib.load(mfile_111312)
 mask_111312 = mimg_111312.get_fdata()
 
