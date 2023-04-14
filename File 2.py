@@ -15,7 +15,7 @@ from nibabel.testing import data_path
 X_train = np.load('xtrain_111312.npy')
 
 # load the mask
-mask_file = os.path.join(data_path, '/Users/kimia/Downloads/Diffusion/nodif_brain_mask.nii.gz')
+mask_file = os.path.join(data_path, '/Diffusion/nodif_brain_mask.nii.gz')
 mask_image = nib.load(mask_file)
 # Return floating point image data with necessary scaling applied
 mask = mask_image.get_fdata()
@@ -42,7 +42,7 @@ def msdki(b,D,K):
   #where $D$ and $K$ are the mean signal diffusivity and mean signal kurtosis
 
 # load and define b-values
-b_values_file = os.path.join(data_path, '/Users/kimia/Downloads/Diffusion/bvals')
+b_values_file = os.path.join(data_path, '/Diffusion/bvals')
 b_values = np.loadtxt(b_values_file)
 # make b_values smaller
 b_values = b_values*10**-3
