@@ -6,6 +6,8 @@ This project is done on 6 HCP images with ID numbers 103818, 111312, 200109, 200
 
 Files 1, 2, 3 and 4 only show the coding done for one of the scans ( 111312 ) but the same codes can be replicated for the other scans as well, you just have to load in the different HCP data.
 
+(The data path for loading in HCP data assumes it has been saved in a file called diffusion, it has to be changed depending on the path of the saved file)
+
 File 1 shows how to load the HCP data for one of the scans and creat and save the X-train for it which is needed for self supervised learning.
 
 File 2 contains the code for self-supervised learning.
